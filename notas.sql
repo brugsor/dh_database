@@ -62,23 +62,47 @@ UPDATE notas
 
 SELECT * FROM notas;
 
-/* 4 */
+/* 4 Agregando más usuarios*/
+INSERT INTO usuarios
+	VALUES (DEFAULT, "Alan Gutiérrez", "agutierrez@gmail.com");
 
+INSERT INTO usuarios (nombre, email)
+	VALUES (DEFAULT, "Galicia Flores", "Gflores@gmail.com");
 
-/* 5 */
+/* 5 Agregando nuevas notas */
+INSERT INTO notas
+	VALUES (DEFAULT, 2, "Saludos de Ana!", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", DEFAULT);
 
+INSERT INTO notas
+	VALUES (DEFAULT, 4, "Hola! Soy Galicia", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", 0);
 
-/* 6 */
+/* 6 Agregando nuevas notas */
+INSERT INTO notas
+	VALUES (DEFAULT, 1, "Nada más jugando a crear notas", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", DEFAULT);
 
+INSERT INTO notas
+	VALUES (DEFAULT, 3, "Escribiendo como Alan", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", 0);
 
-/* 7 */
+/* 7 Agregando nuevas notas */
+INSERT INTO notas
+	VALUES (DEFAULT, 2, "Me dicen Ana", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", DEFAULT);
 
+INSERT INTO notas
+	VALUES (DEFAULT, 3, "Alan a la orden", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", 0);
 
-/* 8 */
+/* 8 Agregando nuevas notas */
+INSERT INTO notas
+	VALUES (DEFAULT, 4, "Agregando otro registro", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", DEFAULT);
 
+INSERT INTO notas
+	VALUES (DEFAULT, 1, "Nueva nota de Fer", DEFAULT, DEFAULT, "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti velit, quos ad dolore culpa aut nam cum. Quaerat culpa aperiam, nihil excepturi animi deserunt, nam tempore quae, facilis id sapiente?", 0);
 
-/* 9 */
+/* 9 Modificando notas */
+UPDATE notas
+	SET descripcion = "El contenido de esta nota ha sido modificado."
+	WHERE nota_id = 1;
 
-
-/* 10 */
-
+/* 10 Modificando notas */
+UPDATE notas
+	SET descripcion = "Lorem ipsum...."
+	WHERE nota_id = 1;
